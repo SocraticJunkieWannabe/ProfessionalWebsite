@@ -1,0 +1,65 @@
+:root {
+  --main-color: #6991C2ff;
+  --accent-color: #8DADD0ff;
+  --banner-height: 500px;
+  --nav-color: rgba(105, 145, 194, 0);
+  --nav-height: 40px;
+  --font-main: 'Segoe UI', sans-serif;
+
+  --pale-dogwood: #EBD0CAff;
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: #8DADD0ff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: calc(var(--banner-height)/2 - var(--nav-height));
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #004f99;
+}

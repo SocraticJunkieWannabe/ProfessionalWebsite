@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My website</title>
+  <!-- Banner styles -->
+  <link rel="stylesheet" href="style_banner.css" />
+  <!-- Page styles -->
+  <link rel="stylesheet" href="style_home.css">
+  <!-- Navigation styles -->
+  <link rel="stylesheet" href="style_navbar.css" />
+
+  <!-- Fonts Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="banner">
+        <img src="images/banner1.png" alt="Banner Image">
+        <div class="banner-text">
+            <h1>LOIC</h1>
+        </div>
+    </div>
+
+    <script>
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <h1>Welcome to the Homepage</h1>
+    <a href="second_page.html">
+        <button class="button">Go to Second Page</button>
+    </a>
+</body>
+</html>
